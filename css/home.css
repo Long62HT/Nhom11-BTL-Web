@@ -44,7 +44,9 @@ ul li ul li:hover {background: #ccc;}
 .icon{
     display: flex;
 }
-
+.btn-outline-success:hover {
+    border-color: #04050a;
+}
 
 
 
@@ -90,6 +92,7 @@ footer ul{
     font-weight: 500;
     position: relative;
     text-decoration: none;
+    margin-left: 30px;
   
 }
 /* .footer-col ul li:not(:last-child){
