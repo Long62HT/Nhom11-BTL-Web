@@ -4,4 +4,76 @@
 }
 .section{
     padding: 30px 0;
+    position: relative;
+    min-height: auto;
+    width: 100%;
 }
+.section-bg, .section-content {
+    width: 100%;
+}
+.relative {
+    position: relative !important;
+}
+.row, .gallery {
+    width: 100%;
+    display: flex;
+}
+.large-12 {
+    max-width: 100%;
+    flex-basis: 100%;
+}
+.col, .gallery-item, .columns {
+    position: relative;
+    margin: 0;
+    padding: 0 15px 30px;
+    width: 100%;
+}
+.col-inner {
+    margin-left: auto;
+    margin-right: 0;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-position: 50% 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    flex: 1 0 auto;
+}
+.row .container {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: 1080px;
+}
+.section-title-container {
+    margin-bottom: 1.5em;
+}
+.section-title-normal {
+    border-bottom: 2px solid #ececec;
+}
+.section-title {
+    position: relative; 
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.section-title span {
+    text-transform: none;
+}
+.section-title-normal span {
+    margin-right: 15px;
+    padding-bottom: 7.5px;
+    border-bottom: 2px solid rgba(0,0,0,.1);
+    margin-bottom: -2px;
+}
+h3{
+    color: black;
+}
+/* .carousel-item1{
+    max-width: 711px;
+    max-height: 400px; */
+/* }.banner{
+    
+} */
