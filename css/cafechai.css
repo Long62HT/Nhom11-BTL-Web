@@ -150,3 +150,12 @@ ul li ul li:hover {background: #ccc;}
     margin: 0;
     line-height: 37px;
 }
+
+.cafe_conten{
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 16px;
+}
+.image{
+    width:100% ;
+}
