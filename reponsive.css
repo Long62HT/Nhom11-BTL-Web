@@ -1,0 +1,40 @@
+/* Mobile */
+@media(max-width :768px){
+    .img-inner img{
+        width: 100%;
+        height: auto;
+    }
+    /* header */
+    .backcolor{
+        background-color: aliceblue !important;
+        color: #000 !important;
+    }
+    .sign_up_mb{
+        display: none;
+    }
+    /* footer */
+    /* .footer{
+        flex-direction: column;
+    } */
+    .footer-col{
+        display: contents;
+    }
+    .footer-col h1,
+    .footer-col li{
+        width: 100%;
+    }
+    .footer-col h1{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .footer-col li{
+        font-size: 14px;
+    }
+}
+
+/*PC */
+@media(min-width :768px){
+    .dangnhap_mb{
+        display: none;
+    }
+}

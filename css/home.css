@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,600;1,500&family=Roboto:wght@400;500&display=swap');
-
+/* a */
 .d{
     display: flex;
     justify-content: space-around;
@@ -14,6 +14,9 @@
 .d li a{
     text-decoration: none;
     color: black;
+}
+.d li{
+    list-style-type: none;
 }
 
 #gap-1125079214{
