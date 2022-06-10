@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,600;1,500&family=Roboto:wght@400;500&display=swap');
 .form_1{
-    margin-left: 400px;
-    margin-right: 400px;
+  max-width:800px ;
+  margin: auto;
     border: solid rgba(101, 76, 79, 0.982);
+    border-radius: 8px;
+    
 }
 h3{
-    margin-left: 420px;
+   text-align: center;
 }
 /* User name */
 .form_username1 {
@@ -37,3 +39,10 @@ h3{
     margin-left: 20px;
 }
 
+.form_lg{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEUnUfoRiI9Eob7jbwHWVePIg-Wn3Uw10sdg&usqp=CAU');
+    background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  height: 100vh;
+}
