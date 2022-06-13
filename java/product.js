@@ -30,7 +30,6 @@ const product = [
         img:"./image/img-quatang/Hop-Qua-ABCD.jpg"   
     }
 ];
-0
 
 const defaultProduct = product.slice(0, product.length);
 console.log(defaultProduct);
