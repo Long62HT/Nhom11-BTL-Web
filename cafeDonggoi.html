@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/cafechai.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/border.css">
+    <link rel="stylesheet" href="./responsive/reponsive.css">
     <title>Coffee-Trung Nguyen</title>
 </head>
 
@@ -145,7 +146,8 @@
             <div class="flex-col flex-grow medium-text-center">
                 <div class="is-medium">
                     <nav class="woocommerce-breadcrumb breadcrumbs "><a href="./home.html"
-                            style="text-decoration: none ; color: #ccc;">Trang chủ</a> <span class="divider">/</span> Cà Phê Đóng Gói
+                            style="text-decoration: none ; color: #ccc;">Trang chủ</a> <span class="divider">/</span> Cà
+                        Phê Đóng Gói
                     </nav>
                 </div>
             </div>
@@ -166,8 +168,8 @@
                         </option>
                         <option value="popularity">Thứ tự theo mức độ phổ biến</option>
                         <option value="date">Mới nhất</option>
-                        <option value="price">Thứ tự theo giá: thấp đến cao</option>
-                        <option value="price-desc">Thứ tự theo giá: cao xuống thấp</option>
+                        <option class="sort_btn_up" value="up">Thứ tự theo giá: thấp đến cao</option>
+                        <option class="sort_btn_down" value="down">Thứ tự theo giá: cao xuống thấp</option>
                     </select>
                     <input type="hidden" name="paged" value="1">
                 </form>
@@ -178,51 +180,51 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
-                                src="./image/img-cafeDonggoi/24-goi-mang-400x400.jpg" />
-                            <h6>
-                                Bộ Quà Tặng Trung Nguyên Legend
-                            </h6>
-                        </a>
+                    <div class="row showProduct">
+                        <!-- <div class="col-md-3 box_css text-center">
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
+                                    src="./image/img-cafeDonggoi/24-goi-mang-400x400.jpg" />
+                                <h6>
+                                    Bộ Quà Tặng Trung Nguyên Legend
+                                </h6>
+                            </a>
                             <h6>
                                 2.180.000₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
-                                src="./image/img-cafeDonggoi/9-goi-mang-400x400.jpg" />
-                            <h6>
-                                Cà Phê Drip 1 – Culi Robusta
-                            </h6>
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
+                                    src="./image/img-cafeDonggoi/9-goi-mang-400x400.jpg" />
+                                <h6>
+                                    Cà Phê Drip 1 – Culi Robusta
+                                </h6>
+                            </a>
                             <h6>
                                 179.500₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
-                                src="./image/img-cafeDonggoi/Buon-Ma-Thuot-1-400x400.png" />
-                            <h6>
-                                Cà Phê Espresso Buôn Ma Thuột
-                            </h6>
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
+                                    src="./image/img-cafeDonggoi/Buon-Ma-Thuot-1-400x400.png" />
+                                <h6>
+                                    Cà Phê Espresso Buôn Ma Thuột
+                                </h6>
+                            </a>
                             <h6>
                                 179.000₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
-                                src="./image/img-cafeDonggoi/CP-1-300x300.jpg" />
-                            <h6>
-                                Cà Phê Chế Phin 1
-                            </h6>
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
+                                    src="./image/img-cafeDonggoi/CP-1-300x300.jpg" />
+                                <h6>
+                                    Cà Phê Chế Phin 1
+                                </h6>
+                            </a>
                             <h6>
                                 104.500₫
                             </h6>
@@ -230,49 +232,49 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
-                                src="./image/img-cafeDonggoi/CP-2-300x300.jpg" />
-                            <h6>
-                                Cà Phê Chế Phin 2
-                            </h6>
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
+                                    src="./image/img-cafeDonggoi/CP-2-300x300.jpg" />
+                                <h6>
+                                    Cà Phê Chế Phin 2
+                                </h6>
+                            </a>
                             <h6>
                                 120.000₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
-                                src="./image/img-cafeDonggoi/CP-3-300x300.jpg" />
-                            <h6>
-                                Cà Phê Chế Phin 3
-                            </h6>
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
+                                    src="./image/img-cafeDonggoi/CP-3-300x300.jpg" />
+                                <h6>
+                                    Cà Phê Chế Phin 3
+                                </h6>
+                            </a>
                             <h6>
                                 141.000₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
-                                src="./image/img-cafeDonggoi/G7-hoa-tan-den-15-goi-400x400.jpg" />
-                            <h6>
-                                Cà Phê G7 hòa tan đen
-                            </h6>
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
+                                    src="./image/img-cafeDonggoi/G7-hoa-tan-den-15-goi-400x400.jpg" />
+                                <h6>
+                                    Cà Phê G7 hòa tan đen
+                                </h6>
+                            </a>
                             <h6>
                                 27.000₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
-                                src="./image/img-cafeDonggoi/G7-Hop-18st-1-400x400.jpg" />
-                            <h6>
-                                Cà Phê G7 3in1 – Hộp 18 Sticks
-                            </h6>
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
+                                    src="./image/img-cafeDonggoi/G7-Hop-18st-1-400x400.jpg" />
+                                <h6>
+                                    Cà Phê G7 3in1 – Hộp 18 Sticks
+                                </h6>
+                            </a>
                             <h6>
                                 54.500₫
                             </h6>
@@ -280,53 +282,53 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
-                                src="./image/img-cafeDonggoi/Gourmet-Blend-final-400x400.png" />
-                            <h6>
-                                Cà Phê Gourmet Blend
-                            </h6>
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
+                                    src="./image/img-cafeDonggoi/Gourmet-Blend-final-400x400.png" />
+                                <h6>
+                                    Cà Phê Gourmet Blend
+                                </h6>
+                            </a>
                             <h6>
                                 111.500₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
-                                src="./image/img-cafeDonggoi/HinhRetail-15-400x400.jpg" />
-                            <h6>
-                                Cà Phê G7 3in1 – Bịch 50 Sachets
-                            </h6>
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
+                                    src="./image/img-cafeDonggoi/HinhRetail-15-400x400.jpg" />
+                                <h6>
+                                    Cà Phê G7 3in1 – Bịch 50 Sachets
+                                </h6>
+                            </a>
                             <h6>
                                 135.500₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
-                                src="./image/img-cafeDonggoi/HinhRetail-18-400x400.jpg" />
-                            <h6>
-                                Cà Phê G7 3in1 – Hộp 21 Gói
-                            </h6>
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
+                                    src="./image/img-cafeDonggoi/HinhRetail-18-400x400.jpg" />
+                                <h6>
+                                    Cà Phê G7 3in1 – Hộp 21 Gói
+                                </h6>
+                            </a>
                             <h6>
                                 60.000₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
-                                src="./image/img-cafeDonggoi/HinhRetail-20-400x400.jpg" />
-                            <h6>
-                                Cà phê hòa tan G7 Gu mạnh X2
-                            </h6>
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
+                                    src="./image/img-cafeDonggoi/HinhRetail-20-400x400.jpg" />
+                                <h6>
+                                    Cà phê hòa tan G7 Gu mạnh X2
+                                </h6>
+                            </a>
                             <h6>
                                 53.500₫
                             </h6>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -349,10 +351,10 @@
                 <div class="footer-col">
                     <h1>Menu sản phẩm</h1>
                     <ul>
-                        <li><a href="#">Trang Chủ</a></li>
-                        <li><a href="#">Cà phê đóng gói</a></li>
-                        <li><a href="">Quàn tặng cao cấp</a></li>
-                        <li><a href="#">Cà phê chai hạt mộcc</a></li>
+                        <li><a href="./home.html">Trang Chủ</a></li>
+                        <li><a href="./cafeDonggoi.html">Cà phê đóng gói</a></li>
+                        <li><a href="./quatang.html">Quàn tặng cao cấp</a></li>
+                        <li><a href="./cafechai.html">Cà phê chai hạt mộc</a></li>
                         <li><a href="">Liên Hệ</a></li>
                     </ul>
                 </div>
@@ -374,6 +376,7 @@
         </div>
         </div>
         <!--footer-->
+        <script src="./java/productcfDG.js"></script>
 </body>
 
 </html>

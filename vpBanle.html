@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./css/cafechai.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./css/border.css">
+    <link rel="stylesheet" href="./responsive/reponsive.css">
     <title>Coffee-Trung Nguyen</title>
 </head>
 
@@ -145,7 +146,8 @@
             <div class="flex-col flex-grow medium-text-center">
                 <div class="is-medium">
                     <nav class="woocommerce-breadcrumb breadcrumbs "><a href="./home.html"
-                            style="text-decoration: none ;color: #ccc;">Trang chủ</a> <span class="divider">/</span> Vật Phẩm Thương
+                            style="text-decoration: none ;color: #ccc;">Trang chủ</a> <span class="divider">/</span> Vật
+                        Phẩm Thương
                         Hiệu</nav>
                 </div>
             </div>
@@ -166,8 +168,8 @@
                         </option>
                         <option value="popularity">Thứ tự theo mức độ phổ biến</option>
                         <option value="date">Mới nhất</option>
-                        <option value="price">Thứ tự theo giá: thấp đến cao</option>
-                        <option value="price-desc">Thứ tự theo giá: cao xuống thấp</option>
+                        <option class="sort_btn_up" value="up">Thứ tự theo giá: thấp đến cao</option>
+                         <option class="sort_btn_down" value="down">Thứ tự theo giá: cao xuống thấp</option>
                     </select>
                     <input type="hidden" name="paged" value="1">
                 </form>
@@ -178,51 +180,51 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-                    <div class="row">
-                        <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width: 100%;" alt="Bootstrap Image Preview"
-                                src="./image/img-vpThuonghieu/Binh-The-Thao-Den-final-300x300.jpg" />
-                            <h6>
-                                Bình Thể Thao Trung Nguyên E-Coffee (Xám)
-                            </h6 class="image" style="width: 100%;">
-                        </a>
+                    <div class="row showProduct">
+                        <!-- <div class="col-md-3 box_css text-center">
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width: 70%;" alt="Bootstrap Image Preview"
+                                    src="./image/img-vpThuonghieu/Binh-The-Thao-Den-final-300x300.jpg" />
+                                <h6>
+                                    Bình Thể Thao Trung Nguyên E-Coffee (Xám)
+                                </h6 class="image" style="width: 70%;">
+                            </a>
                             <h6>
                                 70.000₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width: 100%;" alt="Bootstrap Image Preview"
-                                src="./image/img-vpThuonghieu/Binh-The-Thao-Trang-final-300x300.jpg" />
-                            <h6>
-                                Bình Thể Thao Trung Nguyên E-Coffee (Trắng)
-                            </h6 class="image" style="width: 100%;">
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width: 70%;" alt="Bootstrap Image Preview"
+                                    src="./image/img-vpThuonghieu/Binh-The-Thao-Trang-final-300x300.jpg" />
+                                <h6>
+                                    Bình Thể Thao Trung Nguyên E-Coffee (Trắng)
+                                </h6 class="image" style="width: 70%;">
+                            </a>
                             <h6>
                                 80.000₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width: 100%;" alt="Bootstrap Image Preview"
-                                src="./image/img-vpThuonghieu/Den-400x400.jpg" />
-                            <h6>
-                                Bình Giữ Nhiệt Trung Nguyên Legend – Đen
-                            </h6 class="image" style="width: 100%;">
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width: 70%;" alt="Bootstrap Image Preview"
+                                    src="./image/img-vpThuonghieu/Den-400x400.jpg" />
+                                <h6>
+                                    Bình Giữ Nhiệt Trung Nguyên Legend – Đen
+                                </h6 class="image" style="width: 70%;">
+                            </a>
                             <h6>
                                 350.000₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width: 100%;" alt="Bootstrap Image Preview"
-                                src="./image/img-vpThuonghieu/eb7f0550a33754690d2615-400x400.jpg" />
-                            <h6>
-                                Túi Vải Canvas
-                            </h6 class="image" style="width: 100%;">
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width: 70%;" alt="Bootstrap Image Preview"
+                                    src="./image/img-vpThuonghieu/eb7f0550a33754690d2615-400x400.jpg" />
+                                <h6>
+                                    Túi Vải Canvas
+                                </h6 class="image" style="width: 70%;">
+                            </a>
                             <h6>
                                 55.000₫
                             </h6>
@@ -230,53 +232,53 @@
                     </div>
                     <div class="row">
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width: 100%;" alt="Bootstrap Image Preview"
-                                src="./image/img-vpThuonghieu/Phin-nhôm-Trống-Đồng-400x400.png" />
-                            <h6>
-                                Phin Nhôm Trống Đồng
-                            </h6 class="image" style="width: 100%;">
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width: 70%;" alt="Bootstrap Image Preview"
+                                    src="./image/img-vpThuonghieu/Phin-nhôm-Trống-Đồng-400x400.png" />
+                                <h6>
+                                    Phin Nhôm Trống Đồng
+                                </h6 class="image" style="width: 70%;">
+                            </a>
                             <h6>
                                 49.000₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width: 100%;" alt="Bootstrap Image Preview"
-                                src="./image/img-vpThuonghieu/Phin-nhôm-vĩ-nhân-400x400.png" />
-                            <h6>
-                                Phin Nhôm Vĩ Nhân
-                            </h6 class="image" style="width: 100%;">
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width: 70%;" alt="Bootstrap Image Preview"
+                                    src="./image/img-vpThuonghieu/Phin-nhôm-vĩ-nhân-400x400.png" />
+                                <h6>
+                                    Phin Nhôm Vĩ Nhân
+                                </h6 class="image" style="width: 70%;">
+                            </a>
                             <h6>
                                 69.000₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width: 100%;" alt="Bootstrap Image Preview"
-                                src="./image/img-vpThuonghieu/Trang-400x400.jpg" />
-                            <h6>
-                                Bình Giữ Nhiệt Trung Nguyên Legend – Trắng
-                            </h6 class="image" style="width: 100%;">
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width: 70%;" alt="Bootstrap Image Preview"
+                                    src="./image/img-vpThuonghieu/Trang-400x400.jpg" />
+                                <h6>
+                                    Bình Giữ Nhiệt Trung Nguyên Legend – Trắng
+                                </h6 class="image" style="width: 70%;">
+                            </a>
                             <h6>
                                 350.000₫
                             </h6>
                         </div>
                         <div class="col-md-3 box_css text-center">
-                        <a href="#" style="text-decoration: none; color: #000;">
-                            <img class="image" style="width: 100%;" alt="Bootstrap Image Preview"
-                                src="./image/img-vpThuonghieu/Xam-400x400.jpg" />
-                            <h6>
-                                Bình Giữ Nhiệt Trung Nguyên Legend – Bạc
-                            </h6 class="image" style="width: 100%;">
-                        </a>
+                            <a href="#" style="text-decoration: none; color: #000;">
+                                <img class="image" style="width: 70%;" alt="Bootstrap Image Preview"
+                                    src="./image/img-vpThuonghieu/Xam-400x400.jpg" />
+                                <h6>
+                                    Bình Giữ Nhiệt Trung Nguyên Legend – Bạc
+                                </h6 class="image" style="width: 70%;">
+                            </a>
                             <h6>
                                 350.000₫
                             </h6>
-                        </div>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -324,6 +326,7 @@
         </div>
         </div>
         <!--footer-->
+        <script src="./java/productspBL.js"></script>
 </body>
 
 </html>

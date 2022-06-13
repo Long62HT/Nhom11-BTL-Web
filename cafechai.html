@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="./css/cafechai.css">
   <link rel="stylesheet" href="./css/home.css">
   <link rel="stylesheet" href="./css/border.css">
+  <link rel="stylesheet" href="./responsive/reponsive.css">
   <title>Coffee-Trung Nguyen</title>
 </head>
 
@@ -161,8 +162,8 @@
             </option>
             <option value="popularity">Thứ tự theo mức độ phổ biến</option>
             <option value="date">Mới nhất</option>
-            <option value="price">Thứ tự theo giá: thấp đến cao</option>
-            <option value="price-desc">Thứ tự theo giá: cao xuống thấp</option>
+            <option class="sort_btn_up" value="up">Thứ tự theo giá: thấp đến cao</option>
+            <option class="sort_btn_down" value="down">Thứ tự theo giá: cao xuống thấp</option>
           </select>
           <input type="hidden" name="paged" value="1">
         </form>
@@ -173,8 +174,8 @@
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-12">
-          <div class="row">
-            <div class="col-md-3 box_css text-center">
+          <div class="row showProduct">
+            <!-- <div class="col-md-3 box_css text-center">
               <a href="#" style="text-decoration: none; color: #000;">
                 <img class="image" style="width:70% ;" alt="Bootstrap Image Preview"
                   src="./image/img-cafechai/Bac-Xiu-250ml-400x400.jpg" />
@@ -247,7 +248,7 @@
               <h6>
                 65.000₫
               </h6>
-            </div>
+            </div> -->
 
           </div>
         </div>
@@ -297,6 +298,7 @@
     </div>
     </div>
     <!--footer-->
+    <script src="./java/productcfChai.js"></script>
 </body>
 
 </html>

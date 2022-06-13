@@ -116,3 +116,6 @@ footer ul{
     color: whitesmoke;
     padding-left: 10px;
 }
+.showProduct{
+    flex-wrap: wrap !important;
+}
