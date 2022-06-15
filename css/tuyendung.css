@@ -23,7 +23,7 @@ button{
     color: beige;
     border-radius: 99px;
 }
-img {
+.img-header {
     display: block; 
     margin-left: auto; 
     margin-right: auto;
