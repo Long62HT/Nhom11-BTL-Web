@@ -119,3 +119,6 @@ footer ul{
 .showProduct{
     flex-wrap: wrap !important;
 }
+.showProduct  :hover{
+   color: #d9bd22;
+}

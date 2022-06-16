@@ -1,32 +1,32 @@
 const product = [
     {
         name:"Bạc Xỉu – 250ml ≈ 3ly",
-        price:55000,
+        price:55,
         img:"../image/img-cafechai/Bac-Xiu-250ml-400x400.jpg"
     },
     {
         name:"Bạc Xỉu – 330ml ≈ 4ly",
-        price:65000,
+        price:65,
         img:"../image/img-cafechai/BX-copy-400x400.jpg"
     },
     {
         name:"Cà Phê Đen Hạt Mộc – 250ml ≈ 4 ly",
-        price:49000,
+        price:49,
         img:"../image/img-cafechai/CFD-copy-400x400.jpg"
     },
     {
         name:"Cà Phê Đen Hạt Mộc – 330ml ≈ 6 ly",
-        price:59000,
+        price:59,
         img:"../image/img-cafechai/CFS-copy-400x400.jpg"
     },
     {
         name:"Cà Phê Sữa Hạt Mộc – 250ml ≈ 4ly",
-        price: 55000,
+        price: 55,
         img:"../image/img-cafechai/Den-250ml-400x400.jpg"
     },
     {
         name:"Cà Phê Sữa Hạt Mộc – 330ml ≈ 5ly",
-        price: 65000,
+        price: 65,
         img:"../image/img-cafechai/Sua-250ml-400x400.jpg"   
     }
 ];
@@ -51,7 +51,7 @@ function defaultData(data){
         </h6>
     </a>
         <h6>
-            ${e.price}₫
+            ${e.price}.000₫
         </h6>
     </div>
 `
@@ -104,7 +104,7 @@ document.querySelector('select').addEventListener('change',e=>{
             </h6>
         </a>
             <h6>
-                ${e.price}₫
+                ${e.price}.000₫
             </h6>
         </div>
     `
@@ -130,7 +130,7 @@ document.querySelector('select').addEventListener('change',e=>{
             </h6>
         </a>
             <h6>
-                ${e.price}₫
+                ${e.price}.000₫
             </h6>
         </div>
     `
@@ -149,7 +149,7 @@ document.querySelector('select').addEventListener('change',e=>{
             </h6>
         </a>
             <h6>
-                ${e.price}₫
+                ${e.price}.000₫
             </h6>
         </div>
     `
