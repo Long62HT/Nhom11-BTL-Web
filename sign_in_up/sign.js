@@ -42,7 +42,15 @@ function signup(e) {
     ) {
       alert("dang nhap thanh cong");
         window.location.href="http://127.0.0.1:5503/home.html"
-    } else {
+    } 
+    else if(
+      email=="tranvankhanh2812002@gmail.com" &&
+      password=="123456"
+    ) {
+      alert("dang nhap thanh cong");
+        window.location.href="http://127.0.0.1:5503/admin/admin-user.html"
+    }
+    else {
       alert("dang nhap that bai");
     }
   }
