@@ -1,0 +1,26 @@
+h3{
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.7em;
+    margin-bottom: .5em;
+    display: block;
+}
+.img-header{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
+    max-width: 960px;/* chiều rộng của image */
+}
+table{
+    border-collapse: collapse; width: 100%;
+}
+.col-md-6 img{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
+}
+.title-header{
+    margin-top: 50px;
+}
