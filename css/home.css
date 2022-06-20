@@ -50,7 +50,9 @@ ul li ul li:hover {background: #ccc;}
 .btn-outline-success:hover {
     border-color: #04050a;
 }
-
+.navbar-collapse{
+    background-color: lightgrey;
+}
 
 
 /* footer */
