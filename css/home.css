@@ -115,8 +115,8 @@ footer ul{
     transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-    color: whitesmoke;
-    padding-left: 10px;
+    color: #d9bd22;
+    padding-left: 5px;
 }
 .showProduct{
     flex-wrap: wrap !important;
