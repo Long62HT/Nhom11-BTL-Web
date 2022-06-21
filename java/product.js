@@ -171,6 +171,3 @@ document.querySelector('select').addEventListener('change',e=>{
 // </h6>
 // </div>
 // `
-document.querySelector('.navbar-toggler').addEventListener('mousedown',()=>{
-    document.querySelector('#navbarSupportedContent').classList.toggle('show')
-})

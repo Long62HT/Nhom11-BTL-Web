@@ -167,6 +167,3 @@ document.querySelector('select').addEventListener('change',e=>{
         document.querySelector(".showProduct").innerHTML = htmls.join('')
     }
 })
-document.querySelector('.navbar-toggler').addEventListener('mousedown',()=>{
-    document.querySelector('#navbarSupportedContent').classList.toggle('show')
-})
