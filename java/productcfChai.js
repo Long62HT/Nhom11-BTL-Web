@@ -2,12 +2,14 @@ const product = [
     {
         name:"Bạc Xỉu – 250ml ≈ 3ly",
         price:55,
-        img:"../image/img-cafechai/Bac-Xiu-250ml-400x400.jpg"
+        img:"../image/img-cafechai/Bac-Xiu-250ml-400x400.jpg",
+        link:"../chitietcfChai/chitietCfChai.html"
     },
     {
         name:"Bạc Xỉu – 330ml ≈ 4ly",
         price:65,
-        img:"../image/img-cafechai/BX-copy-400x400.jpg"
+        img:"../image/img-cafechai/BX-copy-400x400.jpg",
+        link:"../chitietcfChai/chitietCfChai2.html"
     },
     {
         name:"Cà Phê Đen Hạt Mộc – 250ml ≈ 4 ly",
@@ -44,14 +46,14 @@ function defaultData(data){
         return`
         <div class="col-md-3 box_css text-center">
         <link rel="stylesheet" href="">
-    <a href="#" style="text-decoration: none; color: #000;">
+    <a href="${e.link}" style="text-decoration: none; color: #000;">
         <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
         <h6>
             ${e.name}
         </h6>
     </a>
         <h6>
-            ${e.price}.000₫
+        <strong> ${e.price}.000₫</strong>
         </h6>
     </div>
 `
@@ -97,14 +99,14 @@ document.querySelector('select').addEventListener('change',e=>{
             return `
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
             </h6>
         </a>
             <h6>
-                ${e.price}.000₫
+            <strong> ${e.price}.000₫</strong>
             </h6>
         </div>
     `
@@ -123,14 +125,14 @@ document.querySelector('select').addEventListener('change',e=>{
             return`
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
             </h6>
         </a>
             <h6>
-                ${e.price}.000₫
+               <strong> ${e.price}.000₫</strong>
             </h6>
         </div>
     `
@@ -142,18 +144,23 @@ document.querySelector('select').addEventListener('change',e=>{
             return`
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
             </h6>
         </a>
             <h6>
-                ${e.price}.000₫
+            <strong> ${e.price}.000₫</strong>
             </h6>
         </div>
     `
         })
         document.querySelector(".showProduct").innerHTML = htmls.join('')
     }
+})
+
+
+document.querySelector('.navbar-toggler').addEventListener('mousedown',()=>{
+    document.querySelector('#navbarSupportedContent').classList.toggle('show')
 })

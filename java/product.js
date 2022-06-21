@@ -51,7 +51,7 @@ function defaultData(data){
         </h6>
     </a>
         <h6>
-            ${e.price}₫
+        <strong> ${e.price}₫</strong>
         </h6>
     </div>
 `
@@ -104,7 +104,7 @@ document.querySelector('select').addEventListener('change',e=>{
             </h6>
         </a>
             <h6>
-                ${e.price}₫
+            <strong> ${e.price}₫</strong>
             </h6>
         </div>
     `
@@ -130,7 +130,7 @@ document.querySelector('select').addEventListener('change',e=>{
             </h6>
         </a>
             <h6>
-                ${e.price}₫
+            <strong> ${e.price}₫</strong>
             </h6>
         </div>
     `
@@ -149,7 +149,7 @@ document.querySelector('select').addEventListener('change',e=>{
             </h6>
         </a>
             <h6>
-                ${e.price}₫
+               <strong> ${e.price}₫</strong>
             </h6>
         </div>
     `
@@ -171,3 +171,6 @@ document.querySelector('select').addEventListener('change',e=>{
 // </h6>
 // </div>
 // `
+document.querySelector('.navbar-toggler').addEventListener('mousedown',()=>{
+    document.querySelector('#navbarSupportedContent').classList.toggle('show')
+})
