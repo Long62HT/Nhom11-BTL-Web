@@ -14,22 +14,26 @@ const product = [
     {
         name:"Cà Phê Đen Hạt Mộc – 250ml ≈ 4 ly",
         price:49,
-        img:"../image/img-cafechai/CFD-copy-400x400.jpg"
+        img:"../image/img-cafechai/Den-250ml-400x400.jpg",
+        link:"../chitietcfChai/chitietCfChai3.html"
     },
     {
         name:"Cà Phê Đen Hạt Mộc – 330ml ≈ 6 ly",
         price:59,
-        img:"../image/img-cafechai/CFS-copy-400x400.jpg"
+        img:"../image/img-cafechai/CFD-copy-400x400.jpg",
+        link:"../chitietcfChai/chitietCfChai4.html"
     },
     {
         name:"Cà Phê Sữa Hạt Mộc – 250ml ≈ 4ly",
         price: 55,
-        img:"../image/img-cafechai/Den-250ml-400x400.jpg"
+        img:"../image/img-cafechai/Sua-250ml-400x400.jpg",
+        link:"../chitietcfChai/chaitietCfChai5.html"
     },
     {
         name:"Cà Phê Sữa Hạt Mộc – 330ml ≈ 5ly",
         price: 65,
-        img:"../image/img-cafechai/Sua-250ml-400x400.jpg"   
+        img:"../image/img-cafechai/CFS-copy-400x400.jpg",
+        link:"../chitietcfChai/chitietCfChai6.html"   
     }
 ];
 
