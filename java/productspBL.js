@@ -2,42 +2,50 @@ const product = [
     {
         name:" Bình Thể Thao Trung Nguyên E-Coffee (Xám)",
         price: 70000,
-        img:"../image/img-vpThuonghieu/Binh-The-Thao-Den-final-300x300.jpg"
+        img:"../image/img-vpThuonghieu/Binh-The-Thao-Den-final-300x300.jpg",
+        link:"../chitietspBL/spbl1.html"
     },
     {
         name:"Bình Thể Thao Trung Nguyên E-Coffee (Trắng)",
         price:80000,
-        img:"../image/img-vpThuonghieu/Binh-The-Thao-Trang-final-300x300.jpg"
+        img:"../image/img-vpThuonghieu/Binh-The-Thao-Trang-final-300x300.jpg",
+        link:"../chitietspBL/spbl2.html"
     },
     {
         name:"Bình Giữ Nhiệt Trung Nguyên Legend – Đen",
         price: 350000,
-        img:"../image/img-vpThuonghieu/Den-400x400.jpg"
+        img:"../image/img-vpThuonghieu/Den-400x400.jpg",
+        link:"../chitietspBL/spbl3.html"
     },
     {
         name:"Túi Vải Canvas",
         price: 55000,
-        img:"../image/img-vpThuonghieu/eb7f0550a33754690d2615-400x400.jpg"
+        img:"../image/img-vpThuonghieu/eb7f0550a33754690d2615-400x400.jpg",
+        link:"../chitietspBL/spbl4.html"
     },
     {
         name:"Phin Nhôm Trống Đồng",
         price:49000,
-        img:"../image/img-vpThuonghieu/Phin-nhôm-Trống-Đồng-400x400.png"
+        img:"../image/img-vpThuonghieu/Phin-nhôm-Trống-Đồng-400x400.png",
+        link:"../chitietspBL/spbl5.html"
     },
     {
         name:"Phin Nhôm Vĩ Nhân",
         price:69000,
-        img:"../image/img-vpThuonghieu/Phin-nhôm-vĩ-nhân-400x400.png"   
+        img:"../image/img-vpThuonghieu/Phin-nhôm-vĩ-nhân-400x400.png" ,  
+        link:"../chitietspBL/spbl6.html"
     },
     {
         name:"Bình Giữ Nhiệt Trung Nguyên Legend – Trắng",
         price:350000,
-        img:"../image/img-vpThuonghieu/Trang-400x400.jpg"   
+        img:"../image/img-vpThuonghieu/Trang-400x400.jpg"   ,
+        link:"../chitietspBL/spbl7.html"
     },
     {
         name:" Bình Giữ Nhiệt Trung Nguyên Legend – Bạc",
         price:350000,
-        img:"../image/img-vpThuonghieu/Xam-400x400.jpg"   
+        img:"../image/img-vpThuonghieu/Xam-400x400.jpg"   ,
+        link:"../chitietspBL/spbl8.html"
     },
 ];
 
@@ -54,7 +62,7 @@ function defaultData(data){
         return`
         <div class="col-md-3 box_css text-center">
         <link rel="stylesheet" href="">
-    <a href="#" style="text-decoration: none; color: #000;">
+    <a href="${e.link}" style="text-decoration: none; color: #000;">
         <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
         <h6>
             ${e.name}
@@ -107,7 +115,7 @@ document.querySelector('select').addEventListener('change',e=>{
             return `
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
@@ -133,7 +141,7 @@ document.querySelector('select').addEventListener('change',e=>{
             return`
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
@@ -152,7 +160,7 @@ document.querySelector('select').addEventListener('change',e=>{
             return`
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}

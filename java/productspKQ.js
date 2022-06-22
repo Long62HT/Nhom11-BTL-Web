@@ -2,42 +2,50 @@ const product = [
     {
         name:"Chiến Tranh Tiền Tệ",
         price: 138000,
-        img:"../image/img-Tusach/97476627_3095602150478764_5421794692440260608_n-400x400.jpg"
+        img:"../image/img-Tusach/97476627_3095602150478764_5421794692440260608_n-400x400.jpg",
+        link:"../chitietspSachquy/sach1.html"
     },
     {
         name:"Bàn Về Khế Ước Xã Hội",
         price:125000,
-        img:"../image/img-Tusach/Bàn-Về-Khế-Ước-Xã-Hội-400x400.jpg"
+        img:"../image/img-Tusach/Bàn-Về-Khế-Ước-Xã-Hội-400x400.jpg",
+        link:"../chitietspSachquy/sach2.html"
     },
     {
         name:"Chính Trị Luận",
         price: 169000,
-        img:"../image/img-Tusach/Chính-Trị-Luận-1-300x300.jpg"
+        img:"../image/img-Tusach/Chính-Trị-Luận-1-300x300.jpg",
+        link:"../chitietspSachquy/sach3.html"
     },
     {
         name:" Quân Vương Thuật Cai Trị",
         price: 109000,
-        img:"../image/img-Tusach/Quân-Vương-Thuật-Cai-Trị-400x400.jpg"
+        img:"../image/img-Tusach/Quân-Vương-Thuật-Cai-Trị-400x400.jpg",
+        link:"../chitietspSachquy/sach4.html"
     },
     {
         name:"Sự Va Chạm Giữa Các Nền Văn Minh Và Sự Tái Lập Trật Tự Thế Giới",
         price:209000,
-        img:"../image/img-Tusach/Sự-Va-Chạm-Giữa-Các-Nền-Văn-Minh-Và-Sự-Tái-Lập-Trật-Tự-Thế-Giới-400x400.jpg"
+        img:"../image/img-Tusach/Sự-Va-Chạm-Giữa-Các-Nền-Văn-Minh-Và-Sự-Tái-Lập-Trật-Tự-Thế-Giới-400x400.jpg",
+        link:"../chitietspSachquy/sach5.html"
     },
     {
         name:" Trật Tự Thế Giới",
         price:209000,
-        img:"../image/img-Tusach/Trật-Tự-Thế-Giới-300x300.jpg"   
+        img:"../image/img-Tusach/Trật-Tự-Thế-Giới-300x300.jpg",  
+        link:"../chitietspSachquy/sach6.html" 
     },
     {
         name:"Tương Lai Của Quyền Lực",
         price:135000,
-        img:"../image/img-Tusach/Tương-Lai-Của-Quyền-Lực-300x300.jpg"   
+        img:"../image/img-Tusach/Tương-Lai-Của-Quyền-Lực-300x300.jpg" ,  
+        link:"../chitietspSachquy/sach7.html"
     },
     {
         name:"Văn Minh Phương Tây Và Phần Còn Lại Của Thế Giới",
         price:189000,
-        img:"../image/img-Tusach/Văn-Minh-Phương-Tây-Và-Phần-Còn-Lại-Của-Thế-Giới-400x400.jpg"   
+        img:"../image/img-Tusach/Văn-Minh-Phương-Tây-Và-Phần-Còn-Lại-Của-Thế-Giới-400x400.jpg" , 
+        link:"../chitietspSachquy/sach8.html" 
     },
 ];
 
@@ -54,7 +62,7 @@ function defaultData(data){
         return`
         <div class="col-md-3 box_css text-center">
         <link rel="stylesheet" href="">
-    <a href="#" style="text-decoration: none; color: #000;">
+    <a href="${e.link}" style="text-decoration: none; color: #000;">
         <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
         <h6>
             ${e.name}
@@ -107,7 +115,7 @@ document.querySelector('select').addEventListener('change',e=>{
             return `
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
@@ -133,7 +141,7 @@ document.querySelector('select').addEventListener('change',e=>{
             return`
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
@@ -152,7 +160,7 @@ document.querySelector('select').addEventListener('change',e=>{
             return`
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}

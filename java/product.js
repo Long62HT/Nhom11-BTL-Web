@@ -2,32 +2,38 @@ const product = [
     {
         name:"Combo Bình An",
         price:329000,
-        img:"./image/img-quatang/App.theenergyoflove03-800x800-1-400x400.jpg"
+        img:"./image/img-quatang/App.theenergyoflove03-800x800-1-400x400.jpg",
+        link:"../chitietSpQuatang/quatang1.html"
     },
     {
         name:"Combo Chia Sẻ",
         price:249000,
-        img:"./image/img-quatang/chiase-400x400.jpg"
+        img:"./image/img-quatang/chiase-400x400.jpg",
+        link:"../chitietSpQuatang/quatang2.html"
     },
     {
         name:"Combo Năng Lượng",
         price:189000,
-        img:"./image/img-quatang/Combo-4-copy-400x400.jpg"
+        img:"./image/img-quatang/Combo-4-copy-400x400.jpg",
+        link:"../chitietSpQuatang/quatang3.html"
     },
     {
         name:"Combo Yêu Thương",
         price:289000,
-        img:"./image/img-quatang/Combo-5-copy-400x400.jpg"
+        img:"./image/img-quatang/Combo-5-copy-400x400.jpg",
+        link:"../chitietSpQuatang/quatang4.html"
     },
     {
         name:"Combo Gắn Kết",
         price:189000,
-        img:"./image/img-quatang/ganket-400x400.jpg"
+        img:"./image/img-quatang/ganket-400x400.jpg",
+        link:"../chitietSpQuatang/quatang5.html"
     },
     {
         name:"Bộ Quà Tặng Trung Nguyên Legend",
         price:2180000,
-        img:"./image/img-quatang/Hop-Qua-ABCD.jpg"   
+        img:"./image/img-quatang/Hop-Qua-ABCD.jpg",
+        link:"../chitietSpQuatang/quatang6.html"   
     }
 ];
 
@@ -44,7 +50,7 @@ function defaultData(data){
         return`
         <div class="col-md-3 box_css text-center">
         <link rel="stylesheet" href="">
-    <a href="#" style="text-decoration: none; color: #000;">
+    <a href="${e.link}" style="text-decoration: none; color: #000;">
         <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
         <h6>
             ${e.name}
@@ -97,7 +103,7 @@ document.querySelector('select').addEventListener('change',e=>{
             return `
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
@@ -123,7 +129,7 @@ document.querySelector('select').addEventListener('change',e=>{
             return`
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
@@ -142,7 +148,7 @@ document.querySelector('select').addEventListener('change',e=>{
             return`
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
@@ -160,7 +166,7 @@ document.querySelector('select').addEventListener('change',e=>{
 // `
 // <div class="col-md-3 box_css text-center">
 // <link rel="stylesheet" href="">
-// <a href="#" style="text-decoration: none; color: #000;">
+// <a href="${e.link}" style="text-decoration: none; color: #000;">
 // <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src=${e.img}/>
 // <h6>
 //     ${e.name}

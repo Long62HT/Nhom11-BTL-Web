@@ -2,62 +2,74 @@ const product = [
     {
         name:"Bộ Quà Tặng Trung Nguyên Legend",
         price: 2180000,
-        img:"../image/img-cafeDonggoi/24-goi-mang-400x400.jpg"
+        img:"../image/img-cafeDonggoi/24-goi-mang-400x400.jpg",
+        link:"../chitietCfDonggoi/sp1.html"
     },
     {
         name:"Cà Phê Drip 1 – Culi Robusta",
         price:179500,
-        img:"../image/img-cafeDonggoi/9-goi-mang-400x400.jpg"
+        img:"../image/img-cafeDonggoi/9-goi-mang-400x400.jpg",
+        link:"../chitietCfDonggoi/sp2.html"
     },
     {
         name:"Cà Phê Espresso Buôn Ma Thuột",
         price: 179000,
-        img:"../image/img-cafeDonggoi/Buon-Ma-Thuot-1-400x400.png"
+        img:"../image/img-cafeDonggoi/Buon-Ma-Thuot-1-400x400.png",
+        link:"../chitietCfDonggoi/sp3.html"
     },
     {
         name:" Cà Phê Chế Phin 1",
         price: 104500,
-        img:"../image/img-cafeDonggoi/CP-1-300x300.jpg"
+        img:"../image/img-cafeDonggoi/CP-1-300x300.jpg",
+        link:"../chitietCfDonggoi/sp4.html"
     },
     {
         name:"Cà Phê Chế Phin 2",
         price:120000,
-        img:"../image/img-cafeDonggoi/CP-2-300x300.jpg"
+        img:"../image/img-cafeDonggoi/CP-2-300x300.jpg",
+        link:"../chitietCfDonggoi/sp5.html"
     },
     {
         name:"Cà Phê Chế Phin 3",
         price:141000,
-        img:"../image/img-cafeDonggoi/CP-3-300x300.jpg"   
+        img:"../image/img-cafeDonggoi/CP-3-300x300.jpg"   ,
+        link:"../chitietCfDonggoi/sp6.html"
     },
     {
         name:"Cà Phê G7 hòa tan đen",
         price:27000,
-        img:"../image/img-cafeDonggoi/G7-hoa-tan-den-15-goi-400x400.jpg"   
+        img:"../image/img-cafeDonggoi/G7-hoa-tan-den-15-goi-400x400.jpg" ,  
+        link:"../chitietCfDonggoi/sp7.html"
     },
     {
         name:"Cà Phê G7 3in1 – Hộp 18 Sticks",
         price:54500,
-        img:"../image/img-cafeDonggoi/G7-Hop-18st-1-400x400.jpg"   
+        img:"../image/img-cafeDonggoi/G7-Hop-18st-1-400x400.jpg" ,  
+        link:"../chitietCfDonggoi/sp8.html"
     },
     {
         name:"Cà Phê Gourmet Blend",
         price:111500,
-        img:"../image/img-cafeDonggoi/Gourmet-Blend-final-400x400.png"   
+        img:"../image/img-cafeDonggoi/Gourmet-Blend-final-400x400.png",  
+        link:"../chitietCfDonggoi/sp9.html" 
     },
     {
         name:"Cà Phê G7 3in1 – Bịch 50 Sachets",
         price:135500,
-        img:"../image/img-cafeDonggoi/HinhRetail-15-400x400.jpg"   
+        img:"../image/img-cafeDonggoi/HinhRetail-15-400x400.jpg" ,  
+        link:"../chitietCfDonggoi/sp10.html"
     },
     {
         name:"Cà Phê G7 3in1 – Hộp 21 Gói",
         price: 60000,
-        img:"../image/img-cafeDonggoi/HinhRetail-18-400x400.jpg"   
+        img:"../image/img-cafeDonggoi/HinhRetail-18-400x400.jpg" , 
+        link:"../chitietCfDonggoi/sp11.html" 
     },
     {
         name:"Cà phê hòa tan G7 Gu mạnh X2",
         price: 53500,
-        img:"../image/img-cafeDonggoi/HinhRetail-20-400x400.jpg"   
+        img:"../image/img-cafeDonggoi/HinhRetail-20-400x400.jpg"  , 
+        link:"../chitietCfDonggoi/sp12.html"
     },
 ];
 
@@ -74,7 +86,7 @@ function defaultData(data){
         return`
         <div class="col-md-3 box_css text-center">
         <link rel="stylesheet" href="">
-    <a href="#" style="text-decoration: none; color: #000;">
+    <a href="${e.link}" style="text-decoration: none; color: #000;">
         <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
         <h6>
             ${e.name}
@@ -127,7 +139,7 @@ document.querySelector('select').addEventListener('change',e=>{
             return `
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
@@ -153,7 +165,7 @@ document.querySelector('select').addEventListener('change',e=>{
             return`
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
@@ -172,7 +184,7 @@ document.querySelector('select').addEventListener('change',e=>{
             return`
             <div class="col-md-3 box_css text-center">
             <link rel="stylesheet" href="">
-        <a href="#" style="text-decoration: none; color: #000;">
+        <a href="${e.link}" style="text-decoration: none; color: #000;">
             <img class="image" style="width: 70%;" alt="Bootstrap Image Preview" src="${e.img}"/>
             <h6>
                 ${e.name}
