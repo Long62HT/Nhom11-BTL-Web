@@ -28,18 +28,6 @@
     padding: 0 15px 30px;
     width: 100%;
 }
-.col-inner {
-    margin-left: auto;
-    margin-right: 0;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    background-position: 50% 50%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    flex: 1 0 auto;
-}
 .row .container {
     padding-left: 0;
     padding-right: 0;
@@ -71,12 +59,8 @@
 h3{
     color: black;
 }
-/* .carousel-item1{
-    max-width: 711px;
-    max-height: 400px; */
-/* }.banner{
-    
-} */
+
+
 .card-img-top{
     width: 262px;
     height: 185.67px;
