@@ -1,5 +1,6 @@
 function signup(e) {
-    event.preventDefault();
+  // Huỷ bỏ event nếu nó có thể huỷ mà không dừng sự lan rộng(propagation) của event tới phần khác.
+    event.preventDefault(); 
     var arr = document.getElementsByTagName('input');
     var name =arr[0].value;
     var email  =arr[1].value;
@@ -25,9 +26,10 @@ function signup(e) {
     }
     
   }
-  
+  // User Nhận giá trị của mục lưu trữ cục bộ là data và ghi vào bảng điều khiển
   var user = localStorage.getItem("data");
   console.log(user);
+  //  hàm này có thể chuyển đổi các giá trị của đối tượng trước khi chúng được trả về khi ta chuyển vào thì ta phải chuyển về để sử dụng
   var data = JSON.parse(user);
   function login(e) {
     

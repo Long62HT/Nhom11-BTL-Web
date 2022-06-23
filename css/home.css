@@ -64,6 +64,7 @@ footer{
 *{
     margin: 0;
     padding: 0;
+    /* Thuộc tính chiều rộng và chiều cao (và thuộc tính tối thiểu / tối đa) bao gồm nội dung, phần đệm và đường viền */
     box-sizing: border-box;
     font-family: 'Roboto slab', sans-serif;
 }
@@ -92,9 +93,12 @@ footer ul{
 .footer-col h1{
     font-size:25px ;
     color: whitesmoke;
+    /* Chữ đầu tiên của mỗi thành phần là chữ hoa. */
     text-transform: capitalize;
     margin-bottom: 30px;
     font-weight: 500;
+    /* Phần tử được định vị so với vị trí bình thường của nó,
+     vì vậy "left: 20px" thêm 20 pixel vào vị trí TRÁI của phần tử */
     position: relative;
     text-decoration: none;
     margin-left: 30px;
@@ -111,6 +115,7 @@ footer ul{
     color: whitesmoke;
     display: block;
     text-decoration: none;
+    /*  Luôn được xuống dòng và chiếm toàn bộ width nếu width không được set */
     display: block;
     transition: all 0.3s ease;
 }
